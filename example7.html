@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300..700&display=swap');
+        </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap');
+        </style>
+   
+     <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+</style>
+        <style>
+ 
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        .search{
+            padding-left: 30px;
+            /* border: 2px solid black; */
+            display: flex;
+          
+          
+            
+        }
+        .navlogo img{
+            padding:0 10px
+        }
+        
+        .offer{
+            padding: 0px 150px;
+            font-size:larger;
+            font-weight:500;
+            font-family:poppins;
+        }
+        .help{
+            font-size: larger;
+            font-weight:500;
+            font-family:poppins;
+        }
+        .but1 button{
+        position:absolute;
+        right: 130px;
+        background-color: black;
+        color: white;
+        font-size: larger;
+        width: 100px;
+        margin-right: 40px;
+        border-radius: 20px;
+        font-family: poppins;
+        
+        
+        
+       
+        }
+       .but2 button{
+        font-size: larger;
+        position: absolute;
+        right: 40px;
+        background-color: black;
+        color: white;
+        width: 100px;
+        border-radius: 20px;
+        margin-right: 10px;
+        font-family: poppins;
+        }
+
+        .nav {
+            display: flex;
+            position:sticky;
+            top: 0;
+            background-color: white;
+            height:30px;
+            width: 100%;
+            padding: 14px 5px;
+            
+             
+            
+           
+        }
+        .address{
+            padding-left: 10px;
+            /* background-color: grey; */
+            
+            
+        }
+        .address input{
+            width: 500px;
+            height: 27px;
+            font-size: large;
+            border-radius: 15px;
+            padding:2px 30px;
+            background-color: rgb(235, 217, 217);
+            border: none;
+           /* font-family:; */
+           letter-spacing: 0px;
+           font-family: poppins;
+
+
+           
+           
+        }
+        .main{
+            /* box-shadow: insets; */
+            box-shadow:  0px 10px 50px rgb(237, 146, 80);
+        }
+
+
+         .main img {
+
+            height: 100vh;
+            width: max(100vw,1000px);
+            /* position: absolute; */
+            position: relative;
+            
+        } 
+        .item1{
+            font-weight:bold;
+            font-size:xx-large;
+            padding-left: 20px;
+        
+        }
+       
+        .backtext{
+            position:absolute;
+            top: 170px;
+            left:50px;
+            margin: 90px;
+        }
+        .quote {
+            font-family: "Bona Nova SC", serif;
+            font-size:xxx-large;
+            font-weight: bolder;
+           
+            
+        }
+        .line{
+            font-family: "Quicksand", sans-serif;
+            font-size:x-large;
+            margin-left:10px;
+            padding: 10px;
+            
+        }
+        .flexbox{
+            display: flex;
+            margin:20px;
+           
+        }
+        .dropdown{
+            margin-left:50px ;
+            ;
+            
+            
+        }
+        .location input{
+            font-size: larger;
+            width: 400px;
+            background-color: white;
+            border-radius: 20px;
+            padding: 10px;
+            
+
+        }
+        .dropdown select{
+            width: 180px;
+            height: 40px;
+            
+            font-size:large;
+            
+           
+        }
+        .backtext button{
+            background-color: black;
+            color: white;
+            border-radius: 50px;
+            padding: 10px;
+           margin-left: 200px;
+           width: 180px;
+           font-size: large;
+           font-family: poppins;
+            
+        }
+        .gif1 img{
+            width: 150px;
+            height: 220px;
+            right: 0px;
+            position: fixed;
+            top: 60px;
+        }
+        .gif2 img{
+            height: 230px;
+            width: 230px;
+            left: 50px;
+            position: absolute;
+            top:690px;
+            
+        }
+        .menu {
+        
+            margin-left: 50px;
+            margin-top: 30px;
+            font-size:xx-large;
+            font-family: poppins;
+            font-weight:bolder;
+        }
+        .menuphoto{
+           margin-left:50px;
+            /* top: 0; */
+            position: absolute;
+            display: flex;
+            font-size: larger;
+            font-weight: bolder;
+            font-family: poppins;
+           /* border: 2px solid black; */
+            overflow:auto;
+            width: 100vw;
+            position: relative;
+        }
+        .fooditem img{
+            /* height: 200px; */
+            width: 200px;
+            padding: 0px 10px;
+            margin: 5px;
+            border-radius: 50px;
+        }
+        .fooditem{
+            transition: 0.3s;
+        }
+        .fooditem:hover{
+            transform: scale(1.4);
+            z-index: 2;
+        }
+        .brandimg img{
+            width: 150px;
+            padding:10px;
+            margin: 50px;
+            border-radius: 200px;
+            box-shadow: 2px 2px 2px 2px rgb(81, 77, 77);
+        }
+        .brandimg{
+            transition: 0.4s;
+        }
+        .brandimg:hover{
+            transform: scale(1.4);
+            z-index: 2;
+
+        }
+        .brands{
+            display: flex;
+            position: absolute;
+            overflow: scroll;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+            margin-left: 50px;
+        }
+      .brandselect{
+        font-size:xx-large;
+            font-family: poppins;
+            font-weight:bold;
+      }
+      .dropdown select {
+    
+        /* border: 5px solid black; */
+       
+       background-color: rgb(255, 255, 244);
+       font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      .location input{
+        background-color: white;
+      }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="item1">YumRider</div>
+        <div class="search">
+            
+                <img src="https://t4.ftcdn.net/jpg/02/54/62/25/360_F_254622588_6OClHyYpak64rVI8y9QVjUvDlStsDEu9.jpg"
+                    alt="location" height="30px" >
+                    <div class="address"><input type="text" placeholder="Enter delivery address"></div>
+                </div>
+    
+
+        <div class="but1"><button>Log in</button></div>
+        <div class="but2"><button>Sign up</button></div>
+                <div class="offer navlogo">
+                    <img src="images/discount.png" alt="" width="30px">Offers</div>
+                <div class="help navlogo"><img src="images/support.png" alt="" width="30px">
+                Help</div>
+    </div>
+
+    <div class="main">
+        <div class="backimage">
+           <img src="images/deliverybg2.png" alt="">
+           <div class="backtext">
+            <div class="quote">Order delivery near you</div>
+            <div class="line">Get food, drinks, groceries, and more delivered.</div>
+            <div class="flexbox">
+                <div class="location">
+                    <input type="text" placeholder="Search for restaurants,cuisine or a dish">
+                </div>
+    
+                <div class="dropdown">
+                    <select name="delivery" id="delivery">
+                        <option value="deliver_now">Deliver now</option>
+                        <option value="schedule">Schedule for later</option>
+                    </select>
+                </div>
+                
+            </div>
+            <button>SEARCH HERE</button>
+       
+        
+        </div>
+        <div class="gif1"><img src="https://media.giphy.com/media/gpORGJGR4oSeqIgIGu/giphy.gif?cid=790b76111r7d5vn2ka8k6zyaw3289v1g4c14mf5uvdeza6b1&ep=v1_stickers_search&rid=giphy.gif&ct=s" alt=""></div>
+           <div class="gif2"><img src="https://media.giphy.com/media/TGQx5v7n5CWloFTPBu/giphy.gif?cid=ecf05e47aem9frvdv5bytdwz9tea659ru4gim3drirlup1t2&ep=v1_stickers_search&rid=giphy.gif&ct=s" alt=""></div>
+        </div>
+       
+        </div>
+       
+    </div>
+    <div class="menu">
+        What's on your mind?
+        <div class="menuphoto">
+            <div class="food1 fooditem "><img src="images/burger.png" alt=""></div>
+        <div class="food2 fooditem"><img src="images/pancakes.png" alt=""></div>
+        <div class="food3 fooditem"><img src="images/pizza.png" alt=""></div>
+        <div class="food4 fooditem"><img src="images/noodles.png" alt=""></div>
+        <div class="food5 fooditem"><img src="images/northindian.png" alt=""></div>
+        <div class="food6 fooditem"><img src="images/cakes.png" alt=""></div>
+        <div class="food7 fooditem"><img src="images/paranthas.png" alt=""></div>
+        <div class="food8 fooditem"><img src="images/rolls.png" alt=""></div>
+        <div class="food9 fooditem"><img src="images/momos.png" alt=""></div>
+        <div class="food1 fooditem"><img src="images/chinese.png" alt=""></div>
+        <div class="food11 fooditem"><img src="images/dosa.png" alt=""></div>
+        <div class="food12 fooditem"><img src="images/cholebhature.png" alt=""></div>
+        <div class="food13 fooditem"><img src="images/gulabjamun.png" alt=""></div>
+
+        </div>
+        <div class="brandselect"> Top brands for you
+            <div class="brands">
+           
+                <div class="brand1 brandimg"><img src="images/kfc.png" alt=""></div>
+                <div class="brand2 brandimg"><img src="images/mcd.png" alt=""></div>
+                <div class="brand7 brandimg"><img src="images/waffle.jpg" alt=""></div>
+                <div class="brand3 brandimg"><img src="images/haldirams.png" alt=""></div>
+                <div class="brand4 brandimg"><img src="images/dominos.png" alt=""></div>
+                <div class="brand5 brandimg"><img src="images/burgerking.png" alt=""></div>
+                <div class="brand6 brandimg"><img src="images/subway.png" alt=""></div>
+            
+            </div>
+        </div>
+        
+        
+</body>
+
+</html> 
